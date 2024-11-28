@@ -5,6 +5,7 @@
 {{ if (eq .input_setup_cicd_and_project `Project_Only`) }}
     {{ skip (printf `%s/%s` $root_dir `.azure`) }}
     {{ skip (printf `%s/%s` $root_dir `.github`) }}
+    {{ skip (printf `%s/%s` $root_dir `.aws`) }}
     {{ skip (printf `%s/%s` $root_dir `docs`) }}
     {{ skip (printf `%s/%s` $root_dir `.gitignore`) }}
     {{ skip (printf `%s/%s` $root_dir `README.md`) }}
